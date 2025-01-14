@@ -6,8 +6,8 @@ Interactive Graphics: Built using Processing for a vibrant and engaging user exp
 Win Detection: Automatically detects when a player connects four pieces in a row (horizontally, vertically, or diagonally).
 
 ## How It Works
-- Game Logic: The Python script handles the core game logic, including win detection, turn management, and move validation.
-- Graphics: Processing is used to render the game board and manage player interaction through mouse clicks.
+Game Logic: The Python script handles the core game logic, including win detection, turn management, and move validation.
+Graphics: Processing is used to render the game board and manage player interaction through mouse clicks.
 
 ## Video Walkthrough
 Here's a walkthrough of the game:
