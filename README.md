@@ -20,6 +20,6 @@ GIF made with LICEcap
 - Python (version 3.7 or above)
 - Processing IDE (for rendering the graphics)
 - Python Mode in Processing:
-[] Open the Processing IDE.
-[] Go to "Tools" → "Add Tool".
-[] Search for Python Mode and install it.
+ - Open the Processing IDE.
+ - Go to "Tools" → "Add Tool".
+ - Search for Python Mode and install it.
