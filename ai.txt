@@ -1,0 +1,21 @@
+Did you attempt to make your computer player very smart -- i.e., do something more clever than just pick a random legal move?
+    Yes.
+
+If so, were you able to accomplish this? Is your computer player as smart as you would like?
+    Yes! I wasn't able to beat computer at the first round.
+
+How did you determine which piece to play next? Tell us about your “pick next move” algorithm
+    Iterate through each column, find the lowest available cell in each column, and calculate for 2 scenarios:
+    1. If yellow disk is in this cell, what will the connect status of yellow disks be?
+    2. If red disk is in this cell, what will the connect status of red disks be?
+    By calculating this, we are able to determine the next step computer should take is either stack yellow disk, or block red disk from stacking.
+    If yellow(computer) is going to win after it drops a disk into that cell, then computer should choose stack instead of block.
+    If red(human player) is going to win after it drops a disk into that cell, then computer should choose block instead of stack.
+    If no player is going to win in this round, then see if red has more consecutive disks. If yes, then computer should choose block, else choose stack.
+
+How often did your computer program beat you, or your friends, or whoever tested it out for you?
+    My friend and I played 5 times. Here is the result: 1 tie, 2 human wins, 2 computer wins.
+
+How would you improve it in the future?
+    Right now the strategy is quite general. To improve, we should consider more specific scenarios, for example lure human player to take the step that
+    would help my next step, especially when trying to stack disks in diagonal directions.

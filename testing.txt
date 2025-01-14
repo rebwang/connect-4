@@ -1,0 +1,30 @@
+Which functions you tested for Part 1
+    I tested the constructor of GameController class and Board class. 
+    I also test is_in_drop_area(), alternate_player(), reset_dropping() functions in Board class.
+    Since mouse listener is not easy to test via pytest, I tested them via playing the game, 
+    such as drag mouse within drop area, drag mouse from playground to drop area, 
+    drag mouse from drop area to playground, press mouse in the drop area while disk is dropping.
+
+A summary of valid inputs (inputs for which you’d expect a ‘good’ result) and expected return values
+    Function get_col_by_x(x) in Board class:
+    valid inputs will be the x-coordinate within 0 and board width
+    expected return values will be the column index within board range
+
+    Function get_lowest_empty_cell(col) in Board class:
+    valid inputs will be the column index within board range
+    expected return values will be the lowest empty cell in that column or None
+
+A summary of invalid inputs (inputs for which you’d expect a ‘bad’ result) and expected return values
+    Function get_col_by_x(x) in Board class:
+    invalid inputs will be the x-coordinate exceed board width
+    expected return values will be the column index out of board range
+
+    Function get_lowest_empty_cell(col) in Board class:
+    ivalid inputs will be the colmn indext out of board range
+    expected return values will be indext out of range error
+
+Whether you’re confident you’ve verified every possible eventuality
+    Not 100% confident but I've tested all the possible eventuality that I can think of
+
+Whether your testing revealed any bugs that you then went back and fixed.
+    No. Didn't encounter bug so far.

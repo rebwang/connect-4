@@ -1,0 +1,58 @@
+What data structures you’ll need (lists, dictionaries, etc.)
+    A 2D array is required to store cells information
+
+What classes you’ll define
+    GameController
+    Grid
+    Board
+    Cell
+    Disk
+
+What functions you’ll need (methods within classes, or other functions that exist outside of any class)
+    Within Board class, I will need at least 3 mouse listener functions to detect user's move:
+        - mousePressed()
+        - mouseDragged()
+        - mouseReleased()
+    A function to switch user's turn (yellow/red):
+        - alternate_player()
+    Also, I will need a function to determine which cell is the destination of a disk:
+        - get_lowest_empty_cell()
+
+    I will need display() function in every classes to display the front-end components
+
+A short description of each class and function/method
+    GameController: monitors game state such as win or tie
+    Grid: draws blue grid lines
+    Board: controls the whole game board's states and disk movement
+    Cell: attributes and methods of a single cell
+    Disk: attributes and methods of a single disk
+
+A bullet-pointed pseudocode of your driver: Tell us about the flow of control, and think about the following cases:
+   - When the user makes a move:
+        detect if the mouse is within the dropping area:
+            if is in the dropping area:
+                get the column info
+                calculate disk's center x, y and create disk instance
+
+   - When the disk is dropping:
+        use a dropping state(bool) to prevent user's new action while dropping
+        determine which column should the disk move within
+        check column's cell status such as if it's full
+            if not full:
+                determine which cell in that column is the disk's destination
+                while disk.y < destination's y:
+                    move disk (y_add)
+        update cell status to filled
+        switch turn(color)
+
+   - When it’s the computer’s turn:
+        use a status to prevent human's new action
+        check cells status to determine the best next move
+        create disk within dropping area
+        disk drop to the destination
+        update cell status
+        switch turn
+
+   - When game over status is assessed
+        check which color wins or tie
+        display game over status (color wins or tie)
