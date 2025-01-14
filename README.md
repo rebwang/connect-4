@@ -11,13 +11,15 @@ Win Detection: Automatically detects when a player connects four pieces in a row
 
 ## Video Walkthrough
 Here's a walkthrough of the game:
-<img src='connect4-1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough'/>
+
+<img src='connect4-1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 GIF made with LICEcap
 
 ## Software Prerequisites
-Python (version 3.7 or above)
-Processing IDE (for rendering the graphics)
-Python Mode in Processing:
+- Python (version 3.7 or above)
+- Processing IDE (for rendering the graphics)
+- Python Mode in Processing:
 [] Open the Processing IDE.
 [] Go to "Tools" → "Add Tool".
 [] Search for Python Mode and install it.
